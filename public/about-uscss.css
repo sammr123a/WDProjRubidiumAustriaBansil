@@ -101,6 +101,22 @@ body {
     text-shadow: -3px 0 white, 0 3px white, 3px 0 white, 0 -3px white, 0 0 12px black;
     margin-left: 50px;
 }
+.abtusbanner1 {
+    background-image: url(../assets/abtusbanner1.png);
+    background-size: 1600px 300px;
+    width:82.9vw;
+    height: 280px;
+    padding-left: 470px;
+    padding-top: 20px;
+}
+.abtusbanner2 {
+    background-image: url(../assets/abtusbanner2.png);
+    background-size: 1600px 300px;
+    width:82.9vw;
+    height: 280px;
+    padding-left: 470px;
+    padding-top: 20px;
+}
 .main p {
     font-family: monospace;
     font-size: 20px;
