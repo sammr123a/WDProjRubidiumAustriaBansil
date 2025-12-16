@@ -25,8 +25,8 @@ body {
     pointer-events: none;
 }
 .headerbg {
-    background-image: url(../assets/nicki-mugshot.jpg);
-    background-size: 150px;
+    background-image: url(../assets/tupac-pic.jpg);
+    background-size: 200px;
     border:1px solid black;
     width: 85vw;
     height:150px;
