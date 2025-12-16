@@ -148,6 +148,7 @@ body {
     height: 280px;
     padding-right: 470px;
     padding-top: 20px;
+    background-position: center right;
 }
 
 .scroll-container{
@@ -179,3 +180,12 @@ body {
     ::-webkit-scrollbar-thumb:hover {
     background-image: url(../assets/scrollbartest.png);
     }
+
+    .windowsmedia{
+        background-image: url('https://i.pinimg.com/564x/50/57/d5/5057d558db91dde981e0bbd3432b3346.jpg');
+        height: 112px;
+        width: 120px;
+        background-size: 120px 112px;
+        filter: grayscale(100%);
+        position: absolute;
+      }
