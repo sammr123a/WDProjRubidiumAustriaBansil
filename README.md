@@ -54,6 +54,19 @@
 
 ---
 
+# Q3 Proposal Update
+## discover east and west coast rap music.
+
+## Features
+things we want to improve
+add smth required which is user inputted(feedbacks, questions)
+##Details 
+expound on it
+##definition of done
+
+
+
+
 
 
 
