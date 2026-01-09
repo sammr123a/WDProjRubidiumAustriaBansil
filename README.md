@@ -58,11 +58,22 @@
 ## discover east and west coast rap music.
 
 ## Features
+<li>The homepage wll also show the purpose of the wesbite and rightly positioned youtube video of a song</li>
+<li>A feedback area in the homepage</li>
+<li>A page that focuses on the 2 big personalities in the east and west coast</li>
+<li>An organized sources page</li>
+
 things we want to improve
 add smth required which is user inputted(feedbacks, questions)
-##Details 
-expound on it
-##definition of done
+## Details 
+<li>The youtube video will be right at the bottom of the resolution, followed by the feedback area and purpose of the website</li>
+<li>This will contain a timeline of The Notorious B.I.G (east) and 2pac (west). This timeline will highlight important life events, career milestones, and contributions to hip-hop culture. </li>
+<li>The sources page will be organized based on each page</li>
+
+
+## definition of done
+The project is considered complete when all planned webpages are fully functional and visually organized. The homepage correctly displays the purpose of the website, and working embedded YouTube video, and a feedback section that accepts user input. The East vs. West Coast page successfully presents timelines for The Notorious B.I.G and 2pac with accurate information. The sources page is properly organized and cites all references used.
+
 
 
 
