@@ -67,6 +67,10 @@ things we want to improve
 add smth required which is user inputted(feedbacks, questions)
 ## Details 
 <li>The youtube video will be right at the bottom of the resolution, followed by the feedback area and purpose of the website</li>
+<img width="686" height="569" alt="image" src="https://github.com/user-attachments/assets/2a1e5125-bb5f-4a11-b650-a900474af02b" />
+<img width="686" height="565" alt="image" src="https://github.com/user-attachments/assets/2605ab3e-aee4-481d-8987-e4a20467650c" />
+<li>The scroll snap feature will be used for the paparazzi photos while the html form text area will be used for the feedback area</li>
+
 <li>This will contain a timeline of The Notorious B.I.G (east) and 2pac (west). This timeline will highlight important life events, career milestones, and contributions to hip-hop culture. </li>
 <li>The sources page will be organized based on each page</li>
 
