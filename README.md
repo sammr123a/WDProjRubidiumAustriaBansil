@@ -72,6 +72,12 @@ add smth required which is user inputted(feedbacks, questions)
 <li>The scroll snap feature will be used for the paparazzi photos while the html form text area will be used for the feedback area</li>
 
 <li>This will contain a timeline of The Notorious B.I.G (east) and 2pac (west). This timeline will highlight important life events, career milestones, and contributions to hip-hop culture. </li>
+<img width="700" height="573" alt="image" src="https://github.com/user-attachments/assets/59c8ece7-8040-428e-8eab-15440b5d7b6d" />
+<img width="703" height="580" alt="image" src="https://github.com/user-attachments/assets/9e422e80-4dae-4ada-b8c9-762309d083c0" />
+<img width="698" height="581" alt="image" src="https://github.com/user-attachments/assets/a4478f92-6a7f-45bd-9b48-38d66ce8d841" />
+<img width="699" height="569" alt="image" src="https://github.com/user-attachments/assets/f0084605-adf5-4e68-8bb8-d9f28d674885" />
+<li>The html form button will be used to asses what coast the user will choose</li>
+
 <li>The sources page will be organized based on each page</li>
 
 
