@@ -79,6 +79,8 @@ add smth required which is user inputted(feedbacks, questions)
 <li>The html form button will be used to asses what coast the user will choose</li>
 
 <li>The sources page will be organized based on each page</li>
+<img width="860" height="696" alt="image" src="https://github.com/user-attachments/assets/4e1a8567-8c4b-4192-bae8-2d640d63fc72" />
+
 
 
 ## definition of done
