@@ -54,6 +54,42 @@
 
 ---
 
+# Q3 Proposal Update
+## discover east and west coast rap music.
+
+## Features
+<li>The homepage wll also show the purpose of the wesbite and rightly positioned youtube video of a song</li>
+<li>A feedback area in the homepage</li>
+<li>A page that focuses on the 2 big personalities in the east and west coast</li>
+<li>An organized sources page</li>
+
+things we want to improve
+add smth required which is user inputted(feedbacks, questions)
+## Details 
+<li>The youtube video will be right at the bottom of the resolution, followed by the feedback area and purpose of the website</li>
+<img width="686" height="569" alt="image" src="https://github.com/user-attachments/assets/2a1e5125-bb5f-4a11-b650-a900474af02b" />
+<img width="686" height="565" alt="image" src="https://github.com/user-attachments/assets/2605ab3e-aee4-481d-8987-e4a20467650c" />
+<li>The scroll snap feature will be used for the paparazzi photos while the html form text area will be used for the feedback area</li>
+
+<li>This will contain a timeline of The Notorious B.I.G (east) and 2pac (west). This timeline will highlight important life events, career milestones, and contributions to hip-hop culture. </li>
+<img width="700" height="573" alt="image" src="https://github.com/user-attachments/assets/59c8ece7-8040-428e-8eab-15440b5d7b6d" />
+<img width="703" height="580" alt="image" src="https://github.com/user-attachments/assets/9e422e80-4dae-4ada-b8c9-762309d083c0" />
+<img width="698" height="581" alt="image" src="https://github.com/user-attachments/assets/a4478f92-6a7f-45bd-9b48-38d66ce8d841" />
+<img width="699" height="569" alt="image" src="https://github.com/user-attachments/assets/f0084605-adf5-4e68-8bb8-d9f28d674885" />
+<li>The html form button will be used to asses what coast the user will choose</li>
+
+<li>The sources page will be organized based on each page</li>
+<img width="860" height="696" alt="image" src="https://github.com/user-attachments/assets/4e1a8567-8c4b-4192-bae8-2d640d63fc72" />
+
+
+
+## definition of done
+The project is considered complete when all planned webpages are fully functional and visually organized. The homepage correctly displays the purpose of the website, and working embedded YouTube video, and a feedback section that accepts user input. The East vs. West Coast page successfully presents timelines for The Notorious B.I.G and 2pac with accurate information. The sources page is properly organized and cites all references used.
+
+
+
+
+
 
 
 
