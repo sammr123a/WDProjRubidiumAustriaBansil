@@ -152,6 +152,29 @@ body {
     background-position: center right;
 }
 
+.feedbackbox{
+    border:1px solid black;
+    background-color: #d3d3d3;
+    font-family: monospace;
+
+    width: 85vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:20px;
+    margin-bottom:20px;
+   }
+label{
+    font-size: 20px;
+    font-family: 'Death Subway';
+    text-shadow: -3px 0 white, 0 3px white, 3px 0 white, 0 -3px white, 0 0 12px black;
+    margin: 20px 20px 0 20px;
+   }
+   textarea{
+    margin: 10px 20px 20px 20px;
+    font-family: monospace;
+    font-size: 18px;
+   }
+
 .scroll-container{
     margin-left:45px;
     overflow: auto;
@@ -184,21 +207,22 @@ body {
 
     .windowsmedia{
         background-image: url('https://i.pinimg.com/564x/50/57/d5/5057d558db91dde981e0bbd3432b3346.jpg');
-        height: 360px;
+        height: 235px;
         width: 420px;
         background-size: 420px 360px;
         filter: grayscale(100%);
-        margin:20px;
+        margin-top:20px;
+        margin-left: 1px
       }
 
 
       .carousel {
-        margin:20px;
+        margin-top:20px;
         display: flex;
         overflow-x: auto;
         scroll-snap-type: x mandatory;
         scroll-behavior: smooth;
-        gap: 1rem;
+        
       }
       
       .slide {
@@ -207,14 +231,18 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
+        margin: auto;
         font-size: 2rem;
         font-weight: bold;
         color: white;
-        height: 360px;
-        width: 170px;
-        border-radius: 8px;
+        height: 235px;
+        width: 1000px;
+        
       }
       
-          .slide:nth-child(1) { background: #e63946; }
-          .slide:nth-child(2) { background: #457b9d; }
-          .slide:nth-child(3) { background: #2a9d8f; }
+          .slide:nth-child(1) { background-image: url(../assets/scroll-snap/1.png); }
+          .slide:nth-child(2) { background-image: url(../assets/scroll-snap/2.png); }
+          .slide:nth-child(3) { background-image: url(../assets/scroll-snap/3.png); }
+          .slide:nth-child(4) { background-image: url(../assets/scroll-snap/4.png); }
+          .slide:nth-child(5) { background-image: url(../assets/scroll-snap/5.png); }
+    
