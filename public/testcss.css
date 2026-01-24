@@ -246,3 +246,31 @@ label{
           .slide:nth-child(4) { background-image: url(../assets/scroll-snap/4.png); }
           .slide:nth-child(5) { background-image: url(../assets/scroll-snap/5.png); }
     
+.loader{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10000;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #888;
+    transition: opacity 0.75s, visibility 0.75s;
+}
+
+.loader-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader::after{
+    content:"";
+    width: 75px;
+    height: 75px;
+    background-image: url(../assets/cds/24kmagic.gif);
+    background-size: cover;
+    background-position: center;
+}
+
