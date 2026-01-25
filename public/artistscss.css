@@ -142,7 +142,12 @@ body {
     height:17vh;
     width:17vh;
     border: 7px solid white;
+    /* transition: transform 0.25s ease; */
 }
+/* .artistcontainer button:hover img {
+    transform: rotate(6deg);
+} */
+
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
