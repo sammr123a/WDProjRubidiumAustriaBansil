@@ -6,6 +6,10 @@
   font-family: 'Death Subway'; /* set name */
   src: url(../assets/DeathSubway-Regular.ttf); /* url of the font */
 }
+@font-face {
+  font-family: 'Miasma Regular'; /* set name */
+  src: url(../assets/MIASMA__.TTF); /* url of the font */
+}
 body {
     background-color: #f0f0f0;
     background-image: url(../assets/bg-stars.png);
@@ -20,7 +24,7 @@ body {
     bottom: 0;
     right: 0;
     background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
-    z-index: 20;
+    z-index: 10001;
     background-size: 100% 2px, 3px, 100%;
     pointer-events: none;
 }
@@ -238,3 +242,42 @@ body {
     ::-webkit-scrollbar-thumb:hover {
     background-image: url(../assets/scrollbartest.png);
     }
+
+.loader{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10000;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #edebed;
+    transition: opacity 1.75s, visibility 1.75s;
+}
+
+.loader-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader::after{
+    content:"";
+    width: 75px;
+    height: 75px;
+    background-image: url(../assets/cds/24kmagic.gif);
+    background-size: cover;
+    background-position: center;
+    margin-left: 20px;
+}
+
+body {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+  background-color: #fff; /* Match your page background */
+}
+
+body.fade-out {
+  opacity: 0;
+}
