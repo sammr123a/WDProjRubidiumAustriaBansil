@@ -83,6 +83,7 @@ body {
     text-decoration: none;
     display: flex;
     align-items: center; 
+    line-height: 1;
 }
 .nav a:hover {
     color: gray;
@@ -312,4 +313,14 @@ body {
 
 body.fade-out {
   opacity: 0;
+}
+
+.hide {
+  display: none;
+  z-index: 100002;
+}
+    
+#audioControl:hover + .hide {
+  display: block;
+  color: white;
 }

@@ -10,7 +10,7 @@ window.addEventListener("load", () => {
 
 document.addEventListener('DOMContentLoaded', () => {
   // Select all links
-  const links = document.querySelectorAll('a');
+  const links = document.querySelectorAll('a:not(#audioControl)');
   
   links.forEach(link => {
     link.addEventListener('click', e => {
@@ -30,3 +30,20 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+var bgMusic = document.getElementById('bgMusic'),
+    ctrl = document.getElementById('audioControl');
+
+ctrl.onclick = function () {
+
+    // Update the Button
+    var pause = ctrl.innerHTML === '⏸';
+    ctrl.innerHTML = pause ? '▶' : '⏸';
+
+    // Update the Audio
+    var method = pause ? 'pause' : 'play';
+    bgMusic[method]();
+
+    // Prevent Default Action
+    return false;
+};
