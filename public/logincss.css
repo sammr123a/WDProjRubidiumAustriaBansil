@@ -1,3 +1,25 @@
+
+@font-face {
+  font-family: 'Urban Starblues'; /* set name */
+  src: url(../assets/Urban\ Starblues\ Demo.otf); /* url of the font */
+}
+@font-face {
+  font-family: 'Death Subway'; /* set name */
+  src: url(../assets/DeathSubway-Regular.ttf); /* url of the font */
+}
+@font-face {
+  font-family: 'Miasma Regular'; /* set name */
+  src: url(../assets/MIASMA__.TTF); /* url of the font */
+}
+@font-face {
+  font-family: 'Mondwest'; /* set name */
+  src: url(../assets/ppmondwest-regular.otf); /* url of the font */
+}
+@font-face {
+  font-family: 'NeueBit'; /* set name */
+  src: url(../assets/ppneuebit-bold.otf); /* url of the font */
+}
+
 /* Bordered form */
 form {
   border-left: 1px solid black;
@@ -15,13 +37,15 @@ input[type=text], input[type=password] {
 
 /* Set a style for all buttons */
 button {
-  background-color: #04AA6D;
+  background-color: #8d8d8d;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
   cursor: pointer;
   width: 100%;
+  font-family: Miasma Regular;
+  font-size: 20px;
 }
 
 /* Add a hover effect for buttons */
