@@ -20,37 +20,46 @@
   src: url(../assets/ppneuebit-bold.otf); /* url of the font */
 }
 
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  padding: 60px;
+}
+
+.main > div {
+  width: 400px;
+}
+
 /* Bordered form */
 form {
   border-left: 1px solid black;
 }
 
 /* Full-width inputs */
-input[type=text], input[type=password] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
+input[type=text],
+input[type=password] {
+  margin: 10px 0 20px;
+  border: 2px solid black;
+}
+
+label {
+  font-family: 'Mondwest';
+  font-size: 14px;
 }
 
 /* Set a style for all buttons */
 button {
-  background-color: #8d8d8d;
+  background-color: black;
   color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  font-family: Miasma Regular;
-  font-size: 20px;
+  border: 2px solid black;
+  transition: all 0.2s ease;
 }
 
-/* Add a hover effect for buttons */
 button:hover {
-  opacity: 0.8;
+  background-color: white;
+  color: black;
 }
 
 /* Extra style for the cancel button (red) */
@@ -74,7 +83,23 @@ img.avatar {
 
 /* Add padding to containers */
 .container {
-  padding: 16px;
+  padding: 30px;
+  background: #f9f9f9;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px black;
+}
+
+h1 {
+  font-family: 'NeueBit';
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-family: 'Mondwest';
+  font-size: 14px;
+  color: #555;
 }
 
 /* The "Forgot password" text */
@@ -136,4 +161,25 @@ body.fade-out {
 
 input {
     font-family: 'Mondwest';
+}
+
+header {
+  padding: 20px 40px;
+  border-bottom: 2px solid black;
+}
+
+.titletext {
+  font-family: 'Urban Starblues';
+  font-size: 28px;
+}
+
+.nav a {
+  margin-right: 20px;
+  font-family: 'Mondwest';
+  text-decoration: none;
+  color: black;
+}
+
+.nav a:hover {
+  text-decoration: underline;
 }

@@ -38,9 +38,10 @@
     </header>
 
     <div class="main" style="display: flex;">
-        <div>
-            <form action="action_page.php" style="border:1px solid #ccc">
-                <div class="container" style="width: 70%;">
+        <button id="hider" style="margin-left: -156px;">Click here to Log In</button>
+        <div id="signUpForm">
+            <form id="signUp" style="border:1px solid #ccc">
+                <div class="container" style="width: 140%;">
                     <div style="display: flex;">
                         <h1>Sign Up</h1>
                         <p style="padding-top: 90px;margin-left: -20px;">(oh who is u?)</p>
@@ -49,47 +50,47 @@
                     <hr>
 
                     <label for="email"><b>Email</b></label>
-                    <input type="text" placeholder="Enter Email" name="email" required>
+                    <input type="text" placeholder="Enter Email" name="email" required> <br>
 
-                    <label for="uname"><b>Username</b></label>
-                    <input type="text" placeholder="Enter Email" name="email" required>
+                    <label for="uname"><b> Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required> <br>
 
                     <label for="psw"><b>Password</b></label>
-                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    <input type="password" placeholder="Enter Password" name="psw" required> <br>
 
                     <label for="psw-repeat"><b>Repeat Password</b></label>
-                    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                    <input type="password" placeholder="Repeat Password" name="psw-repeat" required> <br>
 
-                    <label>
-                        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-                    </label>
+                    <label style="font-size: 14px;"> Remember Me? </label>
+                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> <br><br><br>
 
-                    <div class="clearfix">
+                    <div class="clearfix" style="margin-left: 20px;">
                         <button type="submit" class="signupbtn">Sign Up</button>
                     </div>
                 </div>
             </form>
         </div>
         
-        <div style="width: 100%;">
-            <form action="action_page.php" method="post" style="height: 100%;">
+        <div id="logInForm" style="display:none;width: 50%;margin-left: 20px;">
+            <form id="logIn" style="height: 100%;">
 
-                <div class="container" style="padding-left: 200px;">
+                <div class="container" style="padding-left: 30px;">
                     <h1>Log In</h1>
 
                     <p style="text-indent:-50px;padding-top: 10px;">Please fill up this form to log in.</p>
                     <hr>
 
                     <label for="uname"><b>Username</b></label>
-                    <input type="text" placeholder="Enter Username" name="uname" required>
+                    <input type="text" placeholder="Enter Username" name="uname" required> <br>
 
                     <label for="psw"><b>Password</b></label>
-                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    <input type="password" placeholder="Enter Password" name="psw" required> <br>
 
-                    <button type="submit">Login</button>
-                    <label>
-                        <input type="checkbox" checked="checked" name="remember"> Remember me
-                    </label>
+                    <label style="font-size: 14px;"> Remember Me? </label>
+                    <input type="checkbox" checked="checked" name="remember"> <br> <br> <br> 
+
+                    <button type="submit" style="margin-left: 20px;">Login</button>
+                    
                 </div>
             </form>
         </div>
