@@ -89,7 +89,7 @@ The project is considered complete when all planned webpages are fully functiona
 
 <h1> FINAL MODIFICATION PROPOSAL</h1>
 
-<h3> ## Updated Wireframe with CRUD </h3>
+<h3>Updated Wireframe with CRUD</h3> 
 
 ## Purpose and Narrative
 
