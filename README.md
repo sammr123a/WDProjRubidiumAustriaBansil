@@ -91,8 +91,8 @@ The project is considered complete when all planned webpages are fully functiona
 
 <h3>Updated Wireframe with CRUD</h3> 
 
-<img  alt="image" src="assets/12.png" />
-<img  alt="image" src="assets/13.png" />
+<img  alt="image" src="/assets/12.png" />
+<img  alt="image" src="/assets/13.png" />
 
 ## Purpose and Narrative
 
