@@ -89,9 +89,17 @@ The project is considered complete when all planned webpages are fully functiona
 
 <h1> FINAL MODIFICATION PROPOSAL</h1>
 
+<h3>Updated Wireframe with CRUD</h3>
 
+## Purpose and Narrative
 
+We plan to use the CRUD process in adding more albums into the "Discover" page of the website. 
 
+**C**- In the page, the user be required to input the album name, artist name, the length of the album, and a rating. This would be implemented with html forms at the bottom of the sample songs but above the featured artists part.
+**R&U**-  Once it is added, it would be included in the lists of songs along with a remove button. By inputting the exact information again, the user would be able to update the previous rating given.
+**D**- If the user chooses to not include this album in the list, they could easily click the remove button and it would be deleted.
+
+The purpose of this addition is so that the user would have a chance to add something to the website, which increases *interactability*.
 
 
 
