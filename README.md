@@ -87,6 +87,8 @@ add smth required which is user inputted(feedbacks, questions)
 The project is considered complete when all planned webpages are fully functional and visually organized. The homepage correctly displays the purpose of the website, and working embedded YouTube video, and a feedback section that accepts user input. The East vs. West Coast page successfully presents timelines for The Notorious B.I.G and 2pac with accurate information. The sources page is properly organized and cites all references used.
 
 
+
+
 <h1> FINAL MODIFICATION PROPOSAL</h1>
 
 <h3>Updated Wireframe with CRUD</h3> 
