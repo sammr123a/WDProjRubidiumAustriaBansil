@@ -90,8 +90,7 @@ The project is considered complete when all planned webpages are fully functiona
 <h1> FINAL MODIFICATION PROPOSAL</h1>
 
 <h3>Updated Wireframe with CRUD</h3> 
-<img width="1920" height="1580" alt="12" src="https://github.com/user-attachments/assets/0c84a614-65b1-4bbd-bbcf-67ddf3bd27cb" />
-<img width="1920" height="1580" alt="13" src="https://github.com/user-attachments/assets/d35361c5-7ace-4f25-9176-5d4b16aa817d" />
+
 
 ## Purpose and Narrative
 
