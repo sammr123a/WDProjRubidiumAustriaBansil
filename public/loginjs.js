@@ -1,19 +1,27 @@
 const hideButton = document.getElementById('hider');
 const signUpForm = document.getElementById('signUpForm');
 const logInForm = document.getElementById('logInForm');
+const userGreet = document.getElementById('greetUser');
+const signUp = document.getElementById('signUp')
+const logIn = document.getElementById('logIn')
 
 hideButton.addEventListener('click', function () {
-  if (signUpForm.style.display === 'none' ) {
-    signUpForm.style.display = 'block';
-    logInForm.style.display = 'none';
-    hideButton.style.marginLeft = '-156px';
-    hideButton.textContent = 'Click here to Log In'
-  } else {
-    signUpForm.style.display = 'none';
-    logInForm.style.display = 'block';
-    hideButton.style.marginLeft = '0px';
-    hideButton.textContent = 'Click here to Sign Up'
+  if (localStorage.getItem("user") !== null) {
+    userGreet.style.display = 'none'
   }
+
+  if (signUpForm.style.display === 'none') {
+      signUpForm.style.display = 'block';
+      logInForm.style.display = 'none';
+      hideButton.style.marginLeft = '-156px';
+      hideButton.textContent = 'Click here to Log In'
+    } else {
+      signUpForm.style.display = 'none';
+      logInForm.style.display = 'block';
+      hideButton.style.marginLeft = '0px';
+      hideButton.textContent = 'Click here to Sign Up'
+    }
+  
 })
 
 window.addEventListener("load", () => {
@@ -22,7 +30,7 @@ window.addEventListener("load", () => {
     loader.classList.add("loader-hidden");
 
     loader.addEventListener("transitionend", () => {
-        document.body.removeChild("loader");
+        document.body.removeChild(loader);
     })
 })
 
@@ -47,14 +55,26 @@ document.addEventListener('DOMContentLoaded', () => {
       }, 500); // Matches CSS duration
     });
   });
+
+  if (localStorage.getItem("user") !== null) {
+    const storedUser = localStorage.getItem("user");
+    console.log(`User ${JSON.parse(storedUser).username} has opened the website!`)
+    userGreet.innerHTML = `Hello ${JSON.parse(storedUser).username}! Welcome back to our website!` 
+    signUpForm.style.display = 'none';
+    logInForm.style.display = 'none';
+    hideButton.textContent = 'Log Out'
+    userGreet.style.display = 'block'
+    hideButton.style.marginLeft = '0px';
+    hideButton.style.marginTop = '18px';
+  } else {
+    console.log("have not logged in yet!")
+    userGreet.style.display = 'none'
+  }
 });
 
-const signUp = document.getElementById('signUp')
-const logIn = document.getElementById('logIn')
-
-function handleSignUpSubmit(event) {
-  event.preventDefault();
-
+function handleSignUpSubmit() {
+  e.preventDefault();
+  
   let user = {
     email: document.getElementsByName('email')[0].value,
     username: document.getElementsByName('uname')[0].value,
