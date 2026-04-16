@@ -5,8 +5,8 @@ window.addEventListener("load", () => {
 
     loader.addEventListener("transitionend", () => {
         document.body.removeChild("loader");
-    })
-})
+    });
+});
 
 document.addEventListener('DOMContentLoaded', () => {
   // Select all links
@@ -42,6 +42,19 @@ const elements = {
 
 let photoStage = 0;
 
+window.addEventListener("DOMContentLoaded", () => {
+  const video = document.getElementById("liveVideo");
+
+  navigator.mediaDevices.getUserMedia({ video: true })
+    .then(stream => {
+      video.srcObject = stream;
+      video.play();
+    })
+    .catch(err => {
+      console.error("Camera failed:", err);
+    });
+});
+
 const countDown = callback => {
   let count = 3;
   const countdownEl = elements.countdownEl;
@@ -57,5 +70,26 @@ const countDown = callback => {
       countdownEl.style.display = 'none';
       callback();
     }
-}
-}
+  }, 1000);
+};
+
+const capturePhoto = () => {
+  const { video, ctx, takePhotoBtn } = elements;
+  const yOffset = photoStage === 0 ? 0 : HALF;
+  const vW = video.videoWidth, vH = video.videoHeight;
+  const targetAspect = WIDTH / HALF, vAspect = vW / vH;
+  let sx, sy, sw, sh;
+
+  if (vAspect > targetAspect) { sh = vH; sw = vH * targetAspect; sx = (vW - sw) / 2; sy = 0; }
+  else { sw = vW; sh = vW / targetAspect; sx = 0; sy = (vH - sh) / 2; }
+
+  ctx.save();
+  ctx.translate(WIDTH, 0);
+  ctx.scale(-1, 1);
+  ctx.drawImage(video, sx, sy, sw, sh, 0, yOffset, WIDTH, HALF);
+  ctx.restore();
+
+  photoStage++;
+  if (photoStage === 1) { moveVideoToHalf(1); takePhotoBtn.disabled = false; }
+  else if (photoStage === 2) finalizePhotoStrip();
+};
