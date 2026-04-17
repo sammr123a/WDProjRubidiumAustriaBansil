@@ -32,12 +32,14 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 /*photobooth*/
+const WIDTH = 1176, HEIGHT = 1470, HALF = HEIGHT / 2;
+
 const elements = {
   video: document.getElementById('liveVideo'),
   canvas: document.getElementById('finalCanvas'),
   ctx: document.getElementById('finalCanvas').getContext('2d'),
-  takePhotoBtn: document.getElementById('takePhoto'),
-  countdownEl: document.querySelector('.countdown-timer')
+  takePhotoBtn: document.getElementById('captureButton'),
+  countdownEl: document.querySelector('.countDown')
 };
 
 let photoStage = 0;
@@ -53,6 +55,8 @@ window.addEventListener("DOMContentLoaded", () => {
     .catch(err => {
       console.error("Camera failed:", err);
     });
+      setupEventListeners();
+
 });
 
 const countDown = callback => {
@@ -74,6 +78,7 @@ const countDown = callback => {
 };
 
 const capturePhoto = () => {
+ 
   const { video, ctx, takePhotoBtn } = elements;
   const yOffset = photoStage === 0 ? 0 : HALF;
   const vW = video.videoWidth, vH = video.videoHeight;
@@ -90,6 +95,39 @@ const capturePhoto = () => {
   ctx.restore();
 
   photoStage++;
-  if (photoStage === 1) { moveVideoToHalf(1); takePhotoBtn.disabled = false; }
-  else if (photoStage === 2) finalizePhotoStrip();
+
+if (photoStage === 1) {
+  takePhotoBtn.disabled = false;
+} else if (photoStage === 2) {
+  finalizePhotoStrip();
+}
 };
+
+const finalizePhotoStrip = () => {
+  const { video, ctx, canvas } = elements;
+  video.style.display = 'none';
+  const frame = new Image();
+  frame.src = "/assets/frame.png";
+  frame.onload = () => {
+    ctx.drawImage(frame, 0, 0, WIDTH, HEIGHT);
+    localStorage.setItem('photoStrip', canvas.toDataURL('image/png'));
+    setTimeout(() => window.location.href = 'final.html', 50);
+  };
+  frame.complete && frame.onload();
+};
+
+// setup events
+
+const setupEventListeners = () => {
+  const { takePhotoBtn } = elements;
+
+  takePhotoBtn.addEventListener('click', () => {
+    if (photoStage > 1) return;
+    takePhotoBtn.disabled = true;
+    countDown(capturePhoto);
+  });
+
+};
+
+
+
