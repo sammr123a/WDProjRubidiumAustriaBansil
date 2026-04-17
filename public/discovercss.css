@@ -90,7 +90,7 @@ body {
     background-color: #c6c6c6;
     border:1px solid black;
     width: 85vw;
-    height:1400px;;
+    height:1600px;;
     margin-top:15px;
     margin-left: auto;
     margin-right: auto;
@@ -259,4 +259,16 @@ body {
 
 body.fade-out {
   opacity: 0;
+}
+
+.addAlbum {
+  border: solid 1px black;
+  margin: 0px 50px 10px;
+  padding: 20px;
+}
+.addAlbum p {
+  position: relative;
+  top: -30px;
+  left: 500px;
+  width: 950px;
 }
