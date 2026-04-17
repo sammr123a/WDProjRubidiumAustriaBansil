@@ -135,6 +135,53 @@ window.addEventListener("load", () => {
 })
 
 document.addEventListener('DOMContentLoaded', () => {
+  const albumForm = document.getElementById("albumForm")
+
+  albumForm.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const album = {
+      name: document.getElementById("albumName").value,
+      rating: document.getElementById("albumRate").value,
+      artist: document.getElementById("albumArtist").value,
+      length: document.getElementById("albumLength").value
+    };
+
+    let albums = JSON.parse(localStorage.getItem("albums")) || [];
+
+    albums.forEach(album => {
+      addAlbumToTable(album);
+    });
+
+    albums.push(album);
+
+    // Save back to localStorage
+    localStorage.setItem("albums", JSON.stringify(albums));
+
+    // Add to table immediately
+    addAlbumToTable(album);
+
+    const formData = new FormData(event.target);
+
+    var albumTable = document.getElementById("albumList");
+    var albumRowCount = document.querySelectorAll("#albumList tr").length;
+
+    albumForm.reset();
+
+    function addAlbumToTable(album) {
+      const table = document.getElementById("albumList");
+
+      const row = table.insertRow(albumRowCount);
+
+      row.insertCell(0).innerHTML = "<img src='../assets/cds/blank.gif'>" + album.name;
+      row.insertCell(1).textContent = album.artist;
+      row.insertCell(2).textContent = album.length;
+      row.insertCell(3).textContent = album.rating + "/5 Rate!";
+
+    }
+    
+})
+
   // Select all links
   const links = document.querySelectorAll('a');
   
@@ -156,3 +203,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+
+

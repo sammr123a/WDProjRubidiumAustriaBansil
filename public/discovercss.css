@@ -270,5 +270,6 @@ body.fade-out {
   position: relative;
   top: -30px;
   left: 500px;
-  width: 950px;
+  width: 36vw;
+  font-size:1vw;
 }

@@ -39,7 +39,7 @@
         <h1> Discover More Artists and their Music! </h1>
             <p> </p>
 
-            <table>
+            <table id="albumList">
                
                     <tr id="abbey"><td ><img src="../assets/cds/abbey roadcd.gif">Abbey Road</td><td >The Beatles</td><td >47:00</td></tr>
                     <tr id="nevermind"><td><img src="../assets/cds/nevermind.gif">Nevermind</td><td >Nirvana</td><td >49:00</td></tr>
@@ -59,14 +59,14 @@
             <div class="addAlbum">
                 <h2>Add / Update an Album!</h2><p>(if you want to update a song, just add the same album name add change the rating, artist name, and/or song length)</p>
                 
-                <form style="display: flex;align-items: center;">
+                <form id="albumForm" style="display: flex;align-items: center;">
                     <img src="../assets/cds/blank.gif" style="height: 70px; width: 70px;margin-right: 10px;">
-                    <input type="text" id="albumName" placeholder="Add Album Name">  
-                    <input type="text" id="albumName" placeholder="Add Rating out of 5! (Only include the number)" style="width:300px;position:relative;left:40%"> 
-                    <input type="text" id="albumName" placeholder="Add Artist Name" style="position:relative;left:41%"> 
-                    <input type="text" id="albumName" placeholder="Add Song Length" style="width:120px;position:relative;left:42%"> 
+                    <input type="text" name="albumName" id="albumName" placeholder="Add Album Name" style="width:13vw;">  
+                    <input type="text" name="albumRate" id="albumRate" placeholder="Add Rating out of 5! (Only include the number)" style="width:21.25vw;position:relative;left:10vw"> 
+                    <input type="text" name="albumArtist" id="albumArtist" placeholder="Add Artist Name" style="position:relative;left:10vw;width:13vw;"> 
+                    <input type="text" name="albumLength" id="albumLength" placeholder="Add Song Length" style="width:8.5vw;position:relative;left:10vw"> 
                     <br/> <br/>
-                    <input type="submit" id="albumName" placeholder="Add Song Length" style="width:120px;position:relative;top:40px;left:500px;"> 
+                    <input type="submit" id="submit" placeholder="Submit" style="width:8.5vw;position:relative;top:40px;left:1vw;"> 
                 </form>
             </div>
         
