@@ -58,8 +58,15 @@
 
             <div class="addAlbum">
                 <h2>Add / Update an Album!</h2><p>(if you want to update a song, just add the same album name add change the rating, artist name, and/or song length)</p>
-                <form>
-                <input type="text" id="albumName" placeholder="Album name">  <input type="text" id="albumName" placeholder="Album name"> 
+                
+                <form style="display: flex;align-items: center;">
+                    <img src="../assets/cds/blank.gif" style="height: 70px; width: 70px;margin-right: 10px;">
+                    <input type="text" id="albumName" placeholder="Add Album Name">  
+                    <input type="text" id="albumName" placeholder="Add Rating out of 5! (Only include the number)" style="width:300px;position:relative;left:40%"> 
+                    <input type="text" id="albumName" placeholder="Add Artist Name" style="position:relative;left:41%"> 
+                    <input type="text" id="albumName" placeholder="Add Song Length" style="width:120px;position:relative;left:42%"> 
+                    <br/> <br/>
+                    <input type="submit" id="albumName" placeholder="Add Song Length" style="width:120px;position:relative;top:40px;left:500px;"> 
                 </form>
             </div>
         
